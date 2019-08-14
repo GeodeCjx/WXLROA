@@ -1,0 +1,40 @@
+<!--pages/userinfo.wxml-->
+ <view class="cu-bar justify-center bg-white">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-blue">登录信息</text>
+      <text class="text-ABC text-blue">LOGIN</text>
+    </view>
+  </view>
+<view class="cu-form-group">
+  <view class="title">员工账号：</view>
+  <!-- <input placeholder="员工账号">
+  
+  </input> -->
+  <view class="weui-cell__bd" style='height:2.3em;padding-top:0.38em;color:#808080;text-align:right;'>
+    {{userinfo.userflag}}
+  </view>
+</view>
+<view class="cu-form-group">
+  <view class="title">手机号码：</view>
+  <!-- <input placeholder="手机账号"></input> -->
+  <view class="weui-cell__bd" style='height:2.3em;padding-top:0.38em;color:#808080;text-align:right;'>
+    {{userinfo.mobilephone}}
+  </view>
+</view>
+<view class="cu-form-group">
+  <view class="title">员工邮箱：</view>
+  <!-- <input placeholder="员工邮箱"></input> -->
+  <view class="weui-cell__bd" style='height:2.3em;padding-top:0.38em;color:#808080;text-align:right;'>
+    {{userinfo.emails}}
+  </view>
+</view>
+<view class="cu-form-group">
+  <view class="title">员工工号：</view>
+  <!-- <input placeholder="员工工号"></input> -->
+  <view class="weui-cell__bd" style='height:2.3em;padding-top:0.38em;color:#808080;text-align:right;'>
+    {{userinfo.userworkno}}
+  </view>
+</view>
+<view class="weui-form-preview__hd">
+  <button class="weui-btn" type="warn" bindtap="jiesuo">解锁</button>
+</view>

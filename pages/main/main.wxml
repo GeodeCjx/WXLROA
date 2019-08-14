@@ -1,0 +1,66 @@
+<!--pages/main.wxml-->
+<view class="page__hd">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 应用列表
+  </view>
+</view>
+<view class="cu-list grid col-2 {{gridBorder?'':'no-border'}}">
+  <view class="cu-item"  bindtap="showTopTips1">
+    <view class="cuIcon-cardboardfill text-orange">
+      <view class="cu-tag badge">
+        <block></block>
+      </view>
+    </view>
+    <text>用户绑定</text>
+  </view>
+  <view class="cu-item" bindtap="showTopTips2">
+    <view class="cuIcon-picfill text-yellow}">
+      <view class="cu-tag badge">
+        <block></block>
+      </view>
+    </view>
+    <text>考勤记录</text>
+  </view>
+  <view class="cu-item" bindtap="showTopTips3">
+    <view class="cuIcon-upstagefill text-cyan">
+      <view class="cu-tag badge">
+        <block></block>
+      </view>
+    </view>
+    <text>自拍照片</text>
+  </view>
+  <view class="cu-item" bindtap="showTopTips4">
+    <view class="cuIcon-clothesfill text-blue">
+      <view class="cu-tag badge" >
+        <block></block>
+      </view>
+    </view>
+    <text>考勤指南</text>
+  </view>
+    <view class="cu-item" bindtap="showTopTips5">
+    <view class="cuIcon-clothesfill text-mauve">
+      <view class="cu-tag badge">
+        <block></block>
+      </view>
+    </view>
+    <text>交通地图</text>
+  </view>
+    <view class="cu-item" bindtap="showTopTips6">
+    <view class="cuIcon-commandfill text-olive">
+      <view class="cu-tag badge">
+        <block></block>
+      </view>
+    </view>
+    <text>未知</text>
+  </view>
+</view>

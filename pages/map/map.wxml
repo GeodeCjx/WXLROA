@@ -1,0 +1,30 @@
+<!--pages/map/map.wxml-->
+<!--绑定点击事件-->
+<!-- <button bindtap="nearby_search">搜索周边KFC</button> -->
+<!--地图容器-->
+<form bindsubmit='search'>
+  <view class="cu-bar search bg-white">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" name="seaValue" placeholder="搜索远方" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-green shadow-blur round" form-type='submit'type="primary">搜索</button>
+    </view>
+  </view>
+</form>
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" markers="{{markers}}" circles="{{circles}}" polyline="{{polyline}}" show-compass="ture" enable-3D="ture" enable-overlooking="ture" enable-rotate="ture"
+  enable-zoom="ture" enable-scroll="ture" bindmarkertap="markertap" bindregionchange="regionchange" show-location="true" style="width: 100%; height: {{view.Height}}px;">
+  <!-- <map style='width:500px;height:500px' longitude="113.941133" latitude="22.545999" scale="18" show-compass="ture" enable-3D="ture" enable-overlooking="ture" enable-rotate="ture" enable-zoom="ture" enable-scroll="ture"></map> -->
+
+  <cover-view class='main-map-jj'>
+    <cover-image src='../images/jian.png' class='map-location' bindtap='controltap' id="jian"></cover-image>
+  </cover-view>
+  <cover-view class='main-map-ss'>
+    <cover-image src='../images/jia.png' class='map-location' bindtap='controltap' id="jia"></cover-image>
+  </cover-view>
+
+  <cover-view class='main-map-function'>
+    <cover-image src='../images/main_location.png' class='map-location' bindtap='cover_image_click'></cover-image>
+  </cover-view>
+</map>

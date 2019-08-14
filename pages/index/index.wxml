@@ -1,0 +1,36 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="page__bd">
+    <form bindreset='formReset' bindsubmit='formSubmit'>
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+              <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="请输入账号" name="username"/>
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+              <view class="weui-label">密码</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="请输入密码" name="password" password="true"/>
+          </view>
+      </view>
+      <view class="weui-btn-area">
+          <button class="weui-btn"  form-type='submit' type="primary"size='default' bindtap="showTopTips">登录</button>
+      </view>
+    </form>
+  </view>
+  
+
+</view>

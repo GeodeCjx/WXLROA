@@ -1,0 +1,57 @@
+/* pages/main.wxss */
+@import "../maincss/main.wxss";
+@import "../maincss/icon.wxss";
+.placeholder1{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 0.5em;
+    background-color:aqua;
+    height: 3.8em;
+    line-height: 3.5em;
+    color:#cfcfcf;
+}
+.placeholder2{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+     border-radius: 0.5em;
+    background-color:violet;
+    height: 3.8em;
+    line-height: 3.5em;
+    color: #cfcfcf;
+}
+.placeholder3{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 0.5em;
+    background-color:sandybrown;
+    height: 3.8em;
+    line-height:3.5em;
+    color: #cfcfcf;
+}
+.placeholder4{
+    margin: 5px;
+    padding: 0 10px;
+    border-radius: 0.5em;
+    text-align: center;
+    background-color:crimson;
+    height: 3.8em;
+    line-height: 3.5em;
+    color: #cfcfcf;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+  height: 8em;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}

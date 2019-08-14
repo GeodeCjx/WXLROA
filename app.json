@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/zpai/zpai",
+    "pages/kqlist/kqlist",
+    "pages/main/main",
+    "pages/index/index",
+    "pages/Login/login",
+    "pages/logs/logs",
+    "pages/userinfo/userinfo",
+    "pages/guide/guide",
+    "pages/ff/ff",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "烈焰之剑",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "是否授权当前位置"
+    },
+    "scope.address": {
+      "desc": "是否可以获取通讯录信息"
+    }
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/zpai/zpai",
+        "text": "打卡",
+        "iconPath": "pages/images/txl1.png",
+        "selectedIconPath": "pages/images/txl2.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "pages/images/dk1.png",
+        "selectedIconPath": "pages/images/dk2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

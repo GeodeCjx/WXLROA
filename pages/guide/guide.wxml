@@ -1,0 +1,43 @@
+
+<view class="cu-timeline">
+  <view class="cu-time">考勤指南</view>
+
+  <view class='cu-item text-green'>
+    <view class="bg-green content">
+      <text>1、</text> 用个人PM系统账号、密码进行登录，完善个人的基本用户信息。
+    </view>
+  </view>
+
+  <view class='cu-item text-red'>
+    <view class="bg-red content">
+      <text>2、</text>证照模块里请上传自拍照，用做人脸比对。
+    </view>
+  </view>
+
+  <view class='cu-item text-grey'>
+    <view class="bg-grey content">
+      <text>3、 考勤打卡时间请按公司目前考勤制度的规定执行。\n周一——周五：\n上午8:30——12:00，下午14:00——18:00。\n小周六：\n上午9:00——12:00，下午13:30——15:30。\n早上上班给予5分钟宽限时间。如若加班，请按实际加班时间打卡签到。</text>
+    </view>
+  </view>
+
+  <view class='cu-item text-blue'>
+    <view class="bg-blue content">
+      <text>4、</text>可按实际情况选择打卡类型。
+“常规打卡”是指常驻工作地的打卡，包含外出、外派、驻点、出差的常驻地；
+“外出打卡“是指因工作需要，临时所去的工作地的打卡。
+    </view>
+  </view>
+
+  <view class='cu-item text-cyan'>
+    <view class="bg-cyan content">
+      <text>5、</text> 实时提交个人考勤数据。
+    </view>
+  </view>
+
+  <view class='cu-item text-green'>
+    <view class="bg-green content">
+      <text>6、</text> 考勤列表可查看打卡签到是否成功。
+    </view>
+  </view>
+
+</view>

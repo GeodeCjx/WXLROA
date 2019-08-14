@@ -1,0 +1,37 @@
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text>考勤记录
+  </view>
+</view>
+<view class="cu-list menu-avatar" wx:for="{{array}}" wx:key="unique" bindtap="showModal" data-dtas="{{item}}">
+  <view class="cu-item">
+    <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+    <view class="content">
+      <view class="text-grey">{{item.userflag}}</view>
+      <view class="text-gray text-sm flex">
+        <text class="text-cut">
+							<text class="cuIcon-infofill text-red  margin-right-xs"></text>{{item.remoteaddress}}
+        </text>
+      </view>
+    </view>
+    <view class="action"style="width:150rpx;">
+      <view class="text-grey text-xs"style='width:100%'>{{item.remotetime}}</view>
+      <view class="cu-tag round bg-grey sm">5</view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-modal {{modalName=='Image'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('{{photo}}');height:400px;">
+      <view class="cu-bar justify-end none-bg text-white">
+        <view class='action' bindtap='hideModal'>
+          <text class='icon-close '></text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-bar">
+      <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>地址：{{targetData.remoteaddress}}</view>
+    </view>
+  </view>
+</view>

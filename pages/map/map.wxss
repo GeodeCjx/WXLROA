@@ -1,0 +1,31 @@
+/* pages/map/map.wxss */
+.main-map-function {
+	position: fixed;
+    width: 64rpx;
+    height: 64rpx;
+	left: 28rpx;
+	bottom: 56rpx;
+}
+.map-location {
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 3px;
+}
+
+.main-map-jj {
+	position: fixed;
+  width: 64rpx;
+  height: 64rpx;
+	right: 28rpx;
+	bottom: 56rpx;
+}
+
+.main-map-ss {
+	position: fixed;
+  width: 64rpx;
+  height: 64rpx;
+	right: 28rpx;
+	bottom: 100rpx;
+}
+
+

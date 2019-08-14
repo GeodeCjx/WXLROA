@@ -1,0 +1,38 @@
+<view class="cu-bar justify-center bg-white">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-blue">用户自拍</text>
+      <text class="text-ABC text-blue">咔咔</text>
+    </view>
+  </view>
+<view class="cu-form-group">
+  <view class="title">员工账号：</view>
+  <!-- <input placeholder="员工账号">
+  
+  </input> -->
+  <view class="weui-cell__bd" style='height:2.3em;padding-top:0.38em;color:#808080;text-align:right;'>
+    {{userinfo.userflag}}
+  </view>
+</view>
+
+<view class="cu-bar bg-white margin-top">
+    <view class="action">
+      图片上传
+    </view>
+    <view class="action">
+      {{imgList.length}}/1
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class="grid col-4 grid-square flex-sub">
+      <view class="bg-img" bindtap="ViewImage">
+        <image src='{{file}}' mode='aspectFill'></image>
+      </view>
+      <view class="solids" bindtap="ChooseImage" >
+        <text class="cuIcon-cameraadd"></text>
+      </view>
+    </view>
+  </view>
+
+<view class="weui-form-preview__hd">
+  <button class="weui-btn" type="warn" bindtap="uploads">上传</button>
+</view>
